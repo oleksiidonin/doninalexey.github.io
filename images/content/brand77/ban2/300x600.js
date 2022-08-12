@@ -9,7 +9,7 @@ lib.properties = {
 	fps: 20,
 	color: "#FFFFFF",
 	manifest: [
-		{src:"images/_80p.png", id:"_80p"},
+		{src:"images/80p.png", id:"_80p"},
 		{src:"images/bgImg.jpg", id:"bgImg"},
 		{src:"images/bgImg2.jpg", id:"bgImg2"},
 		{src:"images/box.png", id:"box"},

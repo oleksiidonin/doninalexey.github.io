@@ -589,8 +589,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_3.png", id:"_3"},
-		{src:"images/_3_light.png", id:"_3_light"},
+		{src:"images/3.png", id:"_3"},
+		{src:"images/3_light.png", id:"_3_light"},
 		{src:"images/dev1_b.png", id:"dev1_b"},
 		{src:"images/dev2_b.png", id:"dev2_b"}
 	],

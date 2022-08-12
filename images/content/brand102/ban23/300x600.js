@@ -243,7 +243,7 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_2x.png", id:"_2x"}
+		{src:"images/2x.png", id:"_2x"}
 	],
 	preloads: []
 };
