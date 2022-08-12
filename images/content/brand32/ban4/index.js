@@ -1322,8 +1322,8 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"_300x600.jpg", id:"_300x600"},
-		{src:"_300x600vivid.jpg", id:"_300x600vivid"},
+		{src:"300x600.jpg", id:"_300x600"},
+		{src:"300x600vivid.jpg", id:"_300x600vivid"},
 		{src:"a001.png", id:"a001"},
 		{src:"cup200.png", id:"cup200"},
 		{src:"frame300x600.png", id:"frame300x600"},
