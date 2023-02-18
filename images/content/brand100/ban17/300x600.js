@@ -521,7 +521,7 @@ lib.properties = {
 	opacity: 1.00,
 	manifest: [
 		{src:"images/box.png", id:"box"},
-		{src:"images/_img.jpg", id:"_img"},
+		{src:"images/img.jpg", id:"_img"},
 		{src:"images/steam.png", id:"steam"}
 	],
 	preloads: []

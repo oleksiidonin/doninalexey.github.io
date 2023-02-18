@@ -472,7 +472,7 @@ lib.properties = {
 	opacity: 1.00,
 	manifest: [
 		{src:"images/hot_dog.png", id:"hot_dog"},
-		{src:"images/_img.png", id:"_img"}
+		{src:"images/img.png", id:"_img"}
 	],
 	preloads: []
 };
