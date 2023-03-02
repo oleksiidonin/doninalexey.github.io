@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+    html, body,p {
+        margin: 0 0 0 0;
+    }
+</style>
+<script src="https://code.createjs.com/easeljs-0.8.1.min.js"></script>
+<script src="https://code.createjs.com/tweenjs-0.6.1.min.js"></script>
+<script src="https://code.createjs.com/movieclip-0.8.1.min.js"></script>
+<script src="https://code.createjs.com/preloadjs-0.6.1.min.js"></script>
+<script src="300x600.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._300x600();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="overflow: hidden;">
+	<div style="background-image: url(images/bg1.jpg); background-repeat: repeat-x repeat-y;  width: 300px; height: 600px; cursor:pointer;">
+	   <canvas id="canvas" width="300" height="600" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0);"></canvas>
+    </div>
+</body>
+</html>
